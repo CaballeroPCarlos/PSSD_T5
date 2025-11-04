@@ -1,8 +1,8 @@
 # Proyecto: Elaborar un algoritmo distribuido en C
 
-El objetivo del proyecto es desarrollar programas en C que permitan simular un **consenso distribuido** sobre cualquier tema aplicable.  
+El objetivo del proyecto es desarrollar un conjunto de programas en C que simulen el funcionamiento de un **algoritmo de consenso distribuido**, específicamente el modelo **Two-Phase Commit (2PC)**.
 
-Uno de los programas actuará como **servidor (coordinador)**, mientras que el otro será el **cliente (participante)**. Cada participante podrá votar **COMMIT** o **ABORT**, y el consenso dependerá de que **todos los participantes voten COMMIT** para que la transacción se confirme.
+En esta simulación, uno de los programas actuará como **coordinador (servidor)** y los demás como **participantes (clientes)**. Cada participante podrá emitir un voto de **COMMIT** o **ABORT**, y el consenso global se alcanzará únicamente si **todos los participantes votan COMMIT**, permitiendo así la confirmación final de la transacción.
 
 ---
 
